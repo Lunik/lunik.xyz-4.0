@@ -1,0 +1,276 @@
+/************/
+/*	Default	*/
+/************/
+@import url(https://fonts.googleapis.com/css?family=Actor);
+@import url(../font-awesome/css/font-awesome.min.css);
+
+*{
+	outline: none;
+	font-family: 'Actor', sans-serif;
+	color: #DF7401;
+}
+
+html,body{
+	width: 100%;
+	height: 100%;
+
+	margin: 0px;
+	padding: 0px;
+
+	background-color: #222;
+}
+
+a{	
+	text-decoration: none;
+	color: #DF7401;
+}
+
+a:hover,a:focus{
+	color: #FF8000;
+}
+
+a:active{
+	color: #FE9A2E;
+}
+
+i.fa{
+	margin: 2px 5px 0px 5px;
+}
+
+i.but{
+	font-size: 30px;
+	color: #DF7401;
+
+	cursor: pointer;
+}
+/************/
+/*	 Menu	*/
+/************/
+
+/* Menu Ordi */
+
+.menu{
+	position: fixed;
+	z-index: 100;
+	top:0px;
+	right: 3%;
+
+	font-size: 20px;
+
+	transition: left 0.3s, background-color 0.2s ease-in;
+}
+
+.menu *{
+	display: inline-block;
+
+	vertical-align: top;
+}
+
+.menu .but{
+	visibility: hidden;
+	opacity: 0;
+
+	margin: 10px 5px 10px 5px;
+	transition: visibility 0.2s, opacity 0.2s linear;
+}
+
+.menu ul{
+	padding: 0px;
+}
+
+.menu li{
+	display: inline-block;
+
+	margin: 10px;
+	padding: 2px 5px 2px 5px;
+
+	border-radius: 2px;
+	border: 1px solid transparent;
+
+}
+
+.menu li.active{
+	border: 1px solid #DF7401;
+}
+
+/* Menu Mobile */
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+	.menu{
+		height: 100%;
+
+		left: -170px;
+		right: auto;
+	}
+
+	.menu.open{
+		left: 0px;
+
+		background-color: rgba(0, 0, 0, 0.95);
+	}
+
+	.menu.open .menu-open{
+		visibility: hidden;
+		opacity: 0;
+	}
+
+	.menu .but{
+		visibility: visible;
+		opacity: 1;
+	}
+
+	.menu li{
+		display: block;
+	}
+}
+
+/****************/
+/*	 Content	*/
+/****************/
+.container, .content{
+	width: 100%;
+	height: 100%;
+}
+
+/************/
+/*	 Home	*/
+/************/
+.content#home{
+	background-image: url(../image/home_back.jpg);
+	background-position: center;
+}
+
+.content#home .content-stuff{
+	position: relative;
+	text-align: center;
+
+	top: 40%;
+
+	margin: auto;
+
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.content#home h1{
+	margin:auto;
+
+	font-size: 100px;
+}
+
+.content#home h3{
+	margin:auto;
+
+	font-size: 20px;
+	padding-bottom: 20px;
+}
+
+/****************/
+/*	 PortFolio	*/
+/****************/
+
+.content#portfolio{
+	display: none;
+	background-image: url();
+	background-position: center;
+}
+
+.content#portfolio .content-stuff{
+	position: relative;
+	top: 15%;
+
+	margin: auto;
+
+	text-align: center;
+}
+
+.content#portfolio .folio{
+	position: relative;
+	display: inline-block;
+
+	width: 25%;
+	min-width: 300px;
+	height: 230px;
+
+	margin: 0px 30px 100px 30px;
+
+	background-color: #333;
+	cursor: pointer;
+}
+
+.content#portfolio .folio img{
+	width: 100%;
+	height: 100%;
+}	
+
+.content#portfolio .folio figcaption{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+
+	width: 100%;
+	height: 100%;
+
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content#portfolio .folio:hover figcaption{
+	background-color: rgba(64, 32, 0, 0.7);
+}
+
+.content#portfolio .folio .title{
+	padding: 15% 0px 5% 0px;
+	margin: 0px;
+
+	font-size: 30px;
+	font-weight: bold;
+
+	transition: padding 0.3s;
+}
+
+.content#portfolio .folio:hover .title{
+	padding-top: 5%;
+}
+
+.content#portfolio .folio .language{
+	font-size: 20px;
+	font-weight: bold;
+	opacity: 0;
+
+	transition: opacity 0.2s;
+}
+
+.content#portfolio .folio:hover .language{
+	opacity: 1;
+}
+
+.content#portfolio .folio .description{
+	font-weight: normal;
+	opacity: 0;
+
+	transition: opacity 0.2s;
+}
+
+.content#portfolio .folio:hover .description{
+	opacity: 1;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+	.content#portfolio .folio{
+		margin: 0px 50px 50px 50px;
+	}
+}
+
+/************/
+/*	Whoami	*/
+/************/
+
+.content#whoami{
+	display: none;
+}
+
+/****************/
+/*	  Contact	*/
+/****************/
+
+.content#contact{
+	display: none;
+}
