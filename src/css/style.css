@@ -131,6 +131,18 @@ i.but{
 	height: 100%;
 }
 
+.content{
+	position:absolute;
+	left: -100%;
+	opacity: 0;
+
+	transition: opacity 0.7s;
+}
+
+.content.active{
+	left: 0px;
+	opacity: 1;
+}
 /************/
 /*	 Home	*/
 /************/
@@ -168,7 +180,6 @@ i.but{
 /****************/
 
 .content#portfolio{
-	display: none;
 	background-image: url();
 	background-position: center;
 }
@@ -196,6 +207,12 @@ i.but{
 	cursor: pointer;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+	.content#portfolio .folio{
+		margin: 0px 50px 50px 50px;
+	}
+}
+
 .content#portfolio .folio img{
 	width: 100%;
 	height: 100%;
@@ -216,6 +233,14 @@ i.but{
 	background-color: rgba(64, 32, 0, 0.7);
 }
 
+.content#portfolio .folio figcaption *{
+	opacity: 0;
+	transition: opacity 0.2s;
+}
+.content#portfolio .folio:hover figcaption *{
+	opacity: 1;
+}
+
 .content#portfolio .folio .title{
 	padding: 15% 0px 5% 0px;
 	margin: 0px;
@@ -224,8 +249,9 @@ i.but{
 	font-weight: bold;
 
 	transition: padding 0.3s;
-}
 
+	opacity:1;
+}
 .content#portfolio .folio:hover .title{
 	padding-top: 5%;
 }
@@ -233,38 +259,26 @@ i.but{
 .content#portfolio .folio .language{
 	font-size: 20px;
 	font-weight: bold;
-	opacity: 0;
-
-	transition: opacity 0.2s;
-}
-
-.content#portfolio .folio:hover .language{
-	opacity: 1;
 }
 
 .content#portfolio .folio .description{
 	font-weight: normal;
-	opacity: 0;
-
-	transition: opacity 0.2s;
 }
 
-.content#portfolio .folio:hover .description{
-	opacity: 1;
-}
+.content#portfolio .folio a{
+	display: inline-block;
 
-@media only screen and (min-width: 320px) and (max-width: 768px) {
-	.content#portfolio .folio{
-		margin: 0px 50px 50px 50px;
-	}
+	color: #00FF00;
+	font-weight: bold;
 }
-
+.content#portfolio .folio a:hover{
+	color: #FF0000;
+}
 /************/
 /*	Whoami	*/
 /************/
 
 .content#whoami{
-	display: none;
 }
 
 /****************/
@@ -272,5 +286,4 @@ i.but{
 /****************/
 
 .content#contact{
-	display: none;
 }

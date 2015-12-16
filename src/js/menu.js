@@ -16,4 +16,7 @@ function changeCurrentMenu(data){
 	var hash = window.location.hash.substring(1);
 	$('.menu li').removeClass('active');
 	$('.menu li#'+hash).addClass('active');
+
+	$('.content').removeClass('active');
+	$('.content#'+hash).addClass('active');
 }
