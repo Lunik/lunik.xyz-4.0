@@ -1,1 +1,96 @@
-<img src="http://www.ilay-nosy.com/design/front/images/v6/underconstruction.jpg">
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Lunik - Personnal Website</title>
+	<link rel="author" href="https://twitter.com/GuillaumeLunik">
+	<meta name="description" content="Young French programmer.">
+	<meta name="image" content="src/image/logo.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="src/image/favicon.ico">
+
+	<!-- Facebook metaTag -->
+	<meta property="og:title" content="Lunik - Personnal Website">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="src/image/logo.png">
+	<meta property="og:url" content="http://lunik.xyz">
+	<meta property="og:description" content="Young French programmer.">
+
+	<!-- Twitter metaTag -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:url" content="http://lunik.xyz">
+	<meta name="twitter:title" content="Lunik - Personnal Website">
+	<meta name="twitter:description" content="Young French programmer.">
+	<meta name="twitter:image" content="src/image/logo.png">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="src/css/style.css">
+
+</head>
+<body>
+	<!-- Menu -->
+	<nav class="menu">
+		<i class="menu-close but fa fa-times"></i>
+		<ul>
+			<li class="menu-link active" id="home"><a href="#home"><i class="fa fa-home"></i>Home</a></li>
+			<li class="menu-link" id="portfolio"><a href="#portfolio"><i class="fa fa-file-code-o"></i>Portfolio</a></li>
+			<li class="menu-link" id="whoami"><a href="#whoami"><i class="fa fa-user"></i>About</a></li>
+			<li class="menu-link" id="contact"><a href="#contact"><i class="fa fa-envelope"></i>Contact</a></li>
+		</ul>
+		<i class="menu-open but fa fa-bars"></i>
+	</nav>
+
+	<!-- Content -->
+	<div class="container">
+		<!-- Home -->
+		<div class="content" id="home" name="home">
+			<div class="content-stuff">
+			<h1>LUNIK</h1>
+			<h3>French Computer Science Student</h3>
+			</div>
+		</div>
+		<!-- Portfolio -->
+		<div class="content" id="portfolio" name="portfolio">
+			<div class="content-stuff">
+				<div class="folio" id="chat">
+					<img src="src/image/works/chat.png" />
+					<figcaption>
+						<h5 class="title">Chat</h5>
+						<span class="language">JS / NodeJS</span>
+						<p class="description">Chat with your friends !</p>
+					</figcaption>
+				</div>
+				<div class="folio" id="typingtest">
+					<img src="src/image/works/typing_test.png" />
+					<figcaption>
+						<h5 class="title">Typing Test</h5>
+						<span class="language">CSS / JS</span>
+						<p class="description">Test your typing speed</p>
+					</figcaption>
+				</div>
+				<div class="folio" id="solarsystem">
+					<img src="src/image/works/solar_system.png" />
+					<figcaption>
+						<h5 class="title">Solar System</h5>
+						<span class="language">JS</span>
+						<p class="description">Interractive Solar System</p>
+					</figcaption>
+				</div>
+				<div class="folio">
+				</div>
+				<div class="folio">
+				</div>
+				<div class="folio">
+				</div>
+			</div>
+		</div>
+		<!-- Whoami -->
+		<div class="content" id="whoami" name="whoami"></div>
+		<!-- Contact -->
+		<div class="content" id="contact" name="contact"></div>
+	</div>
+
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script src="src/js/app.js"></script>
+</body>
+</html>
