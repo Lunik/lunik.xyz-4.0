@@ -94,7 +94,7 @@ i.but{
 }
 
 /* Menu Mobile */
-@media only screen and (min-width: 320px) and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 	.menu{
 		height: 100%;
 
@@ -194,9 +194,9 @@ i.but{
 	display: inline-block;
 
 	width: 25%;
-	min-width: 300px;
+	min-width: 250px;
 	height: 15%;
-	min-height: 200px;
+	min-height: 166px;
 
 	margin: 0px 30px 100px 30px;
 
@@ -207,7 +207,7 @@ i.but{
 	display: none;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 	.content#portfolio .folio{
 		margin: 0px 50px 50px 50px;
 	}
