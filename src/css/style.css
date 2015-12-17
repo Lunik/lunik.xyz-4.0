@@ -202,7 +202,6 @@ i.but{
 
 	margin: 0px 30px 100px 30px;
 
-	background-color: #444;
 	cursor: pointer;
 }
 
@@ -221,26 +220,27 @@ i.but{
 	height: 100%;
 }	
 
-.content#portfolio .folio figcaption{
+.content#portfolio .folio .infos{
 	position: absolute;
 	top: 0px;
 	left: 0px;
 
 	width: 100%;
-	height: 100%;
+	height: 99%;
 
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.6);
+	transition: background-color 0.3s;
 }
 
-.content#portfolio .folio:hover figcaption{
-	background-color: rgba(64, 32, 0, 0.7);
+.content#portfolio .folio:hover .infos{
+	background-color: #111;
 }
 
-.content#portfolio .folio figcaption *{
+.content#portfolio .folio .infos *{
 	opacity: 0;
 	transition: opacity 0.2s;
 }
-.content#portfolio .folio:hover figcaption *{
+.content#portfolio .folio:hover .infos *{
 	opacity: 1;
 }
 
@@ -256,7 +256,7 @@ i.but{
 	opacity:1;
 }
 .content#portfolio .folio:hover .title{
-	padding-top: 5%;
+	padding-top: 10%;
 }
 
 .content#portfolio .folio .language{
