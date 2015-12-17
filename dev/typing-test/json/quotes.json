@@ -1,0 +1,102 @@
+
+{
+  "title":"Quotes",
+  "quotes":[
+    {
+      "id":0,
+      "title":"Le petit Chaperon Rouge",
+      "author":"Charles Perrault",
+      "text":"Il était une fois une petite fille de village, la plus jolie qu'on eût su voir ; sa mère en était folle, et sa mère-grand plus folle encore. Cette bonne femme lui fit faire un petit chaperon rouge, qui lui seyait si bien que partout on l'appelait le petit Chaperon rouge."
+    },
+    {
+      "id":1,
+      "title":"La ferme des animaux (les chiens 1)",
+      "author":"Georges Orwell",
+      "text":"Il courait comme seul un cochon peut courir, les chiens sur ses talons. Mais tout à coup voici qu'il glisse, et l'on croit que les chiens sont sur lui. Alors il se redresse, et file d'un train encore plus vif. Les chiens regagnent du terrain, et l'un d'eux, tous crocs dehors, est sur le point de lui mordre la queue quand, de justesse, il l'esquive. Puis, dans un élan suprême, Boule de Neige se faufile par un trou dans la haie, et on ne le revit plus."
+    },
+    {
+      "id":2,
+      "title":"No et moi",
+      "author":"Delphine de Vigan",
+      "text":"On est capables d'envoyer des avions supersoniques et des fusées dans l'espace, d'identifier un criminel à partir d'un cheveu ou d'une minuscule particule de peau, de créer une tomate qui reste trois semaines au réfrigérateur sans prendre une ride, de faire tenir dans une puce microscopique des milliards d'informations. On est capables de laisser mourir des gens dans la rue."
+    },
+    {
+      "id":3,
+      "title":"Proverbes 1",
+      "author":"Divers",
+      "text":"Quand on met la main à la pâte, il en reste toujours quelque chose aux doigts. On ne change pas une équipe qui gagne. Fais ce que je dis, ne fais pas ce que je fais. Il ne faut pas jeter le bébé avec l'eau du bain. Il est facile de nager quand on vous tient le menton. Ce sont les tonneaux vides qui font le plus de bruit. Si les chats gardent les chèvres, qui attrapera les souris ? Pluie du matin n'arrête pas le pèlerin. On n'apprend pas aux vieux singes à faire des grimaces."
+    },
+    {
+      "id":4,
+      "title":"Unknown",
+      "author":"Oscar Wilde",
+      "text":"Je choisis mes amis pour leur bonne présentation, mes connaissances pour leur bon caractère et mes ennemis pour leur bonne intelligence. Un homme ne peut être trop soigneux dans le choix de ses ennemis."
+    },
+    {
+      "id":5,
+      "title":"La chevelure",
+      "author":"Guy de Maupassant",
+      "text":"Le passé m'attire, le présent m'effraye parce que l'avenir c'est la mort. Je regrette tout ce qui s'est fait, je pleure tous ceux qui ont vécu ; je voudrais arrêter le temps, arrêter l'heure. Mais elle va, elle va, elle passe, elle me prend de seconde en seconde un peu de moi pour le néant de demain. Et je ne revivrai pas. Adieu celles d'hier. Je vous aime."
+    },
+    {
+      "id":6,
+      "title":"Mendiants et orgueilleux",
+      "author":"Albert Cossery",
+      "text":"Qu'ils deviennent tous des mendiants. Ne suis-je pas moi-même un mendiant ? Quand nous aurons un pays où le peuple sera uniquement composé de mendiants, tu verras ce que deviendra cette superbe domination. Elle tombera en poussière. Crois-moi."
+    },
+    {
+      "id":7,
+      "title":"Essais de psychologie sportive",
+      "author":"Pierre de Coubertin",
+      "text":"Les sports ont fait fleurir toutes les qualités qui servent à la guerre : insouciance, belle-humeur, accoutumance à l'imprévu, notion exacte de l'effort à faire sans dépenser des forces inutiles."
+    },
+    {
+      "id":8,
+      "title":"Unknown",
+      "author":"Martin Luther King",
+      "text":"Serons-nous des extrémistes pour la haine ou pour l'amour ? Serons-nous des extrémistes pour la conservation de l'injustice ou pour l'expression de la justice ? Peut-être que les Etats du Sud, la nation et le monde ont un besoin tragique d'extrémistes créateurs."
+    },
+    {
+      "id":9,
+      "title":"Les Schtroumpfs 2",
+      "author":"Raja Gosnell",
+      "text":"Cherchant désespérément à s'emparer de la puissance de l'essence magique des Schtroumpfs, Gargamel a inventé les Canailles, de minuscules créatures. Mais pour que leur transformation en vrais Schtroumpfs soit complète, il lui manque encore la formule secrète que détient la Schtroumpfette. Il parvient à kidnapper la demoiselle et l'emmène à Paris pour accomplir son plan diabolique..."
+    },
+    {
+      "id":10,
+      "title":"Harry Potter à l'école des sorciers",
+      "author":"J.K. Rowling",
+      "text":"Je pourrais vous apprendre à mettre la gloire en bouteille, à distiller la grandeur, et même à enfermer la mort dans un flacon si vous étiez autre chose qu'une de ces bandes de cornichons à qui je dispense habituellement mes cours."
+    },
+    {
+      "id":11,
+      "title":"1984",
+      "author":"George Orwell",
+      "text":"Le langage politique est destiné à rendre vraisemblables les mensonges, respectables les meurtres et à donner l'apparence de la solidité à ce qui n'est que vent."
+    },
+    {
+      "id":12,
+      "title":"Les propos sur la peinture du Moine Citrouille-Amère-1-",
+      "author":"Shitao",
+      "text":"Dans la plus haute Antiquité, il n'y avait pas de règles ; la suprême simplicité ne s'était pas encore divisée. Dès que la suprême simplicité se divise, la règle s'établit. Sur quoi se fonde la règle ? La règle se fonde sur l'unique trait de pinceau. L'unique trait de pinceau est l'origine de toutes choses, la racine de tous les phénomènes ; sa fonction est manifeste pour l'esprit, et cachée en l'homme, mais le vulgaire l'ignore."
+    },
+    {
+      "id":13,
+      "title":"Le moine noir",
+      "author":"Anton Tchekhov",
+      "text":"Un moine, vêtu de noir, le chef blanc et les sourcils noirs, les mains croisées sur la poitrine, passa à côté de lui. Ses pieds nus ne touchaient pas le sol. Ayant franchi quelque espace, il se retourna vers Kôvrine, lui fit un signe de tête et lui sourit d'une façon à la fois amicale et malicieuse."
+    },
+    {
+      "id":14,
+      "title":"Pensées, réflexions et maximes (2)",
+      "author":"Chateaubriand",
+      "text":"Les caractères exaltés dans les gens vulgaires sont insupportables : unis à une grande âme ou à un beau génie, ils entraînent tout. Ces caractères ne veulent pas séduire, et ils séduisent ; ils ignorent eux-mêmes leur force, et sont tout étonnés d'avoir fait tant d'heureux ou tant de victimes."
+    },
+    {
+      "id":15,
+      "title":"La plus belle histoire des animaux",
+      "author":"Boris CYRULNIK",
+      "text":"Le sommeil est un grand programme commun du vivant. Toutefois, les poissons, les batraciens et les reptiles, dont la température dépend du milieu, ne rêvent pas. En revanche, tous les mammifères et les oiseaux dont la température reste stable présentent un sommeil lent et un sommeil profond rapide. Périodiquement au cours du sommeil revient une phase d'alerte cérébrale qui est dite \"paradoxale\", car elle correspond au moment du sommeil le plus profond."
+    }
+  ]
+}
