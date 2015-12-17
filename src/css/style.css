@@ -145,6 +145,12 @@ i.but{
 	left: 0px;
 	opacity: 1;
 }
+
+.content .content-stuff{
+	position: relative;
+	text-align: center;
+	margin: auto;
+}
 /************/
 /*	 Home	*/
 /************/
@@ -154,12 +160,7 @@ i.but{
 }
 
 .content#home .content-stuff{
-	position: relative;
-	text-align: center;
-
 	top: 40%;
-
-	margin: auto;
 
 	background-color: rgba(0, 0, 0, 0.8);
 }
@@ -187,12 +188,7 @@ i.but{
 }
 
 .content#portfolio .content-stuff{
-	position: relative;
 	top: 15%;
-
-	margin: auto;
-
-	text-align: center;
 }
 
 .content#portfolio .folio{
