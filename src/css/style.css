@@ -137,8 +137,6 @@ i.but{
 	opacity: 0;
 
 	transition: opacity 0.7s;
-
-	overflow: hidden;
 }
 
 .content.active{
