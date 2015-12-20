@@ -4,9 +4,11 @@ var COUNTDOWN;
 var DEFAULTCOUNTDOWN = 300;
 
 $(document).ready(function(){
-	$.getJSON('src/json/apikey.json',function(data){
-		APIKEYS = data;
-		init();
+	$.getScript('src/js/notify.js',function(){
+		$.getJSON('src/json/apikey.json',function(data){
+			APIKEYS = data;
+			init();
+		});
 	});
 });
 
@@ -102,12 +104,14 @@ function updateMonitor(monitor){
 			data.statusicon = "icon-remove";
 			data.label = "warning";
 			data.alert = "alert alert-warning";
+			notify(monitorName+" "+data.statustxt);
 			break;
 		case 9:
 			data.statustxt = "Offline";
 			data.statusicon = "icon-bolt";
 			data.label = "danger";
 			data.alert = "alert alert-danger";
+			notify(monitorName+" "+data.statustxt);
 			break;
 	}
 
