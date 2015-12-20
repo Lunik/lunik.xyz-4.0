@@ -102,14 +102,14 @@ function updateMonitor(monitor){
 			data.statusicon = "icon-remove";
 			data.label = "warning";
 			data.alert = "alert alert-warning";
-			notify(monitorName+" "+data.statustxt);
+			notify(appName+" "+monitorName+" "+data.statustxt);
 			break;
 		case 9:
 			data.statustxt = "Offline";
 			data.statusicon = "icon-bolt";
 			data.label = "danger";
 			data.alert = "alert alert-danger";
-			notify(monitorName+" "+data.statustxt);
+			notify(appName+" "+monitorName+" "+data.statustxt);
 			break;
 	}
 
