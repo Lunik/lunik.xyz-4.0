@@ -2,6 +2,7 @@ var APIKEYS;
 
 var COUNTDOWN;
 var DEFAULTCOUNTDOWN = 300;
+var LOGS = {};
 
 $(document).ready(function(){
 	$.getJSON('src/json/apikey.json',function(data){
@@ -21,6 +22,7 @@ function init(){
 			$monitors.append($newMonitor);
 		}
 		$newApp.append($monitors);
+		$newApp.append($('<div>').addClass('app-uptime'));
 		$newApp.append($('<div>').addClass('app-status'));
 		$container.append($newApp);
 	}
@@ -79,6 +81,8 @@ function updateMonitor(monitor){
 	data.selector = $("#"+appName+" #"+monitorName);
 	data.status = monitor.status;
 	data.url = monitor.url;
+	data.log = monitor.log;
+	data.uptime = monitor.alltimeuptimeratio;
 
 	switch (parseInt(data.status, 10)) {
 		case 0:
@@ -123,26 +127,35 @@ function updateViewMonitor(data){
 	data.selector.click(function(){
 		window.location = "//"+data.url.replace("http://", '');
 	});
+	data.selector.attr('uptime',data.uptime);
 }
 
 function updateViewApp(appName){
-	var moyenne = 0;
-	var nb = 0;
-	$("#"+appName+" .monitor").each(function(){
-		moyenne += parseInt($(this).attr('etat'),10);
-		nb++;
-	});
-	moyenne = Math.round(moyenne/nb);
+	var moyenneUptime = 0;
+	var moyenneStatus = 0;
+	var nb = $("#"+appName+" .monitor").length;
 
-	if(moyenne == 0){
+	$("#"+appName+" .monitor").each(function(){
+		moyenneUptime += parseInt($(this).attr('uptime'),10);
+		moyenneStatus += parseInt($(this).attr('etat'),10);
+	});
+	moyenneUptime = Math.round(moyenneUptime/nb);
+	moyenneStatus = Math.round(moyenneStatus/nb);	
+
+	if(moyenneStatus == 0){
+		$("#"+appName+" .app-uptime").attr('etat','0').text(moyenneUptime+"%");
 		$("#"+appName+" .app-status").attr('etat','0').text("Up-Time paused");
-	} else if(moyenne == 1){
+	} else if(moyenneStatus == 1){
+		$("#"+appName+" .app-uptime").attr('etat','1').text(moyenneUptime+"%");
 		$("#"+appName+" .app-status").attr('etat','1').text("Not checked yet");
-	} else if(moyenne == 2){
+	} else if(moyenneStatus == 2){
+		$("#"+appName+" .app-uptime").attr('etat','2').text(moyenneUptime+"%");
 		$("#"+appName+" .app-status").attr('etat','2').text("Online");
-	} else if(moyenne > 2 && moyenne <= 8){
+	} else if(moyenneStatus > 2 && moyenneStatus <= 8){
+		$("#"+appName+" .app-uptime").attr('etat','8').text(100-moyenneUptime+"%");
 		$("#"+appName+" .app-status").attr('etat','8').text("Seems offline");
-	} else if(moyenne == 9){
+	} else if(moyenneStatus == 9){
+		$("#"+appName+" .app-uptime").attr('etat','9').text(100-moyenneUptime+"%");
 		$("#"+appName+" .app-status").attr('etat','9').text("Offline");
 	} else {
 		$("#"+appName+" .app-status").attr('etat','-1').text("Error");

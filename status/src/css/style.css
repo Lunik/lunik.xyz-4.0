@@ -1,3 +1,6 @@
+/************/
+/*	Default	*/
+/************/
 html,body{
 	width: 100%;
 }
@@ -7,6 +10,9 @@ body{
 	color: #AAA;
 }
 
+/************/
+/*	 Main	*/
+/************/
 .title{
 	text-align: center;
 }
@@ -20,6 +26,9 @@ body{
 	width: 70%;
 }
 
+/************/
+/*	  App	*/
+/************/
 .app{
 	display: block;
 
@@ -36,6 +45,60 @@ body{
 	font-size: 20px;
 }
 
+/************/
+/* Monitors	*/
+/************/
+.app .app-monitors{
+	display: inline-block;
+	width: 90%;
+}
+
+/* Uptime value */
+.app .app-uptime{
+	display: inline-block;
+
+	width: 10%;
+	text-align: right;
+}
+.app-uptime[etat="0"] {
+	color: #675f5f;
+}
+.app-uptime[etat="1"] {
+	color: #32c8de;
+}
+.app-uptime[etat="2"] {
+	color: #27AE60;
+}
+.app-uptime[etat="8"] {
+	color: #f7a253;
+}
+.app-uptime[etat="9"] {
+	color: #f75353;
+}
+
+/* status value */
+.app .app-status{
+	text-align: right;
+}
+.app-status[etat="0"] {
+	color: #675f5f;
+}
+.app-status[etat="1"] {
+	color: #32c8de;
+}
+.app-status[etat="2"] {
+	color: #27AE60;
+}
+.app-status[etat="8"] {
+	color: #f7a253;
+}
+.app-status[etat="9"] {
+	color: #f75353;
+}
+
+/************/
+/*	Monitor	*/
+/************/
 .app .monitor{
 	display: inline-block;
 
@@ -65,28 +128,9 @@ body{
 	background-color: #f75353;
 }
 
-
-.app .app-status{
-	text-align: right;
-}
-
-.app-status[etat="0"] {
-	color: #675f5f;
-}
-.app-status[etat="1"] {
-	color: #32c8de;
-}
-.app-status[etat="2"] {
-	color: #27AE60;
-}
-.app-status[etat="8"] {
-	color: #f7a253;
-}
-.app-status[etat="9"] {
-	color: #f75353;
-}
-
-
+/************/
+/*	reload	*/
+/************/
 
 .reload{
 	width: 70%;
