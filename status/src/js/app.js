@@ -4,11 +4,9 @@ var COUNTDOWN;
 var DEFAULTCOUNTDOWN = 300;
 
 $(document).ready(function(){
-	$.getScript('src/js/notify.js',function(){
-		$.getJSON('src/json/apikey.json',function(data){
-			APIKEYS = data;
-			init();
-		});
+	$.getJSON('src/json/apikey.json',function(data){
+		APIKEYS = data;
+		init();
 	});
 });
 
