@@ -2,6 +2,7 @@ var APIKEYS;
 
 var COUNTDOWN;
 var DEFAULTCOUNTDOWN = 300;
+var CURRENTDEFAULTCOUNTDOWN = 0;
 var LOGS = {};
 
 $(document).ready(function(){
@@ -12,6 +13,8 @@ $(document).ready(function(){
 });
 
 function init(){
+	initCountDown(1);
+	updateCountDown();
 	$container = $('.container');
 	for (var app in APIKEYS){
 		$newApp = $('<div>').addClass('app').attr('id',app);
@@ -27,16 +30,20 @@ function init(){
 		$container.append($newApp);
 	}
 	update();
-	COUNTDOWN = DEFAULTCOUNTDOWN;
-	$('.reload progress').attr('max',DEFAULTCOUNTDOWN);
-	updateCountDown();
+}
+
+function initCountDown(speed){
+	CURRENTDEFAULTCOUNTDOWN = DEFAULTCOUNTDOWN/speed;
+
+	COUNTDOWN = CURRENTDEFAULTCOUNTDOWN;
+	$('.reload progress').attr('max',CURRENTDEFAULTCOUNTDOWN);
 }
 
 function updateCountDown(){
 	COUNTDOWN--;
 	if(COUNTDOWN <= 0){
 		update();
-		COUNTDOWN = DEFAULTCOUNTDOWN;
+		COUNTDOWN = CURRENTDEFAULTCOUNTDOWN;
 	}
 	$('.reload progress').attr('value',COUNTDOWN);
 
@@ -89,17 +96,20 @@ function updateMonitor(monitor){
 			data.statustxt = "Up-Time paused";
 			data.statusicon = "icon-pause";
 			data.label = "info";
+			initCountDown(1);
 			break;
 		case 1:
 			data.statustxt = "Not checked yet";
 			data.statusicon = "icon-question";
 			data.label = "default";
+			initCountDown(1);
 			break;
 		case 2:
 			data.statustxt = "Online";
 			data.statusicon = "icon-ok";
 			data.label = "success";
 			data.alert = "";
+			initCountDown(1);
 			break;
 		case 8:
 			data.statustxt = "Seems offline";
@@ -107,6 +117,7 @@ function updateMonitor(monitor){
 			data.label = "warning";
 			data.alert = "alert alert-warning";
 			notify(appName+" "+monitorName+" "+data.statustxt);
+			initCountDown(3);
 			break;
 		case 9:
 			data.statustxt = "Offline";
@@ -114,6 +125,7 @@ function updateMonitor(monitor){
 			data.label = "danger";
 			data.alert = "alert alert-danger";
 			notify(appName+" "+monitorName+" "+data.statustxt);
+			initCountDown(3);
 			break;
 	}
 
