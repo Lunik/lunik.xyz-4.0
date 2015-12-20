@@ -1,5 +1,5 @@
 
-$(document).ready(function(){ initNotify()});
+$(document).ready(initNotify);
 
 function initNotify(){
 	$(document).attr('basetitle',$(document).attr('title'));
