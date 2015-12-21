@@ -2,8 +2,6 @@ var APIKEYS;
 
 var COUNTDOWN;
 var DEFAULTCOUNTDOWN = 300;
-var CURRENTDEFAULTCOUNTDOWN = 0;
-var LOGS = {};
 
 $(document).ready(function(){
 	$.getJSON('src/json/apikey.json',function(data){
@@ -33,17 +31,16 @@ function init(){
 }
 
 function initCountDown(speed){
-	CURRENTDEFAULTCOUNTDOWN = DEFAULTCOUNTDOWN/speed;
+	COUNTDOWN = DEFAULTCOUNTDOWN/speed;
 
-	COUNTDOWN = CURRENTDEFAULTCOUNTDOWN;
-	$('.reload progress').attr('max',CURRENTDEFAULTCOUNTDOWN);
+	$('.reload progress').attr('max',COUNTDOWN);
 }
 
 function updateCountDown(){
 	COUNTDOWN--;
 	if(COUNTDOWN <= 0){
 		update();
-		COUNTDOWN = CURRENTDEFAULTCOUNTDOWN;
+		COUNTDOWN = DEFAULTCOUNTDOWN;
 	}
 	$('.reload progress').attr('value',COUNTDOWN);
 
@@ -96,20 +93,17 @@ function updateMonitor(monitor){
 			data.statustxt = "Up-Time paused";
 			data.statusicon = "icon-pause";
 			data.label = "info";
-			initCountDown(1);
 			break;
 		case 1:
 			data.statustxt = "Not checked yet";
 			data.statusicon = "icon-question";
 			data.label = "default";
-			initCountDown(1);
 			break;
 		case 2:
 			data.statustxt = "Online";
 			data.statusicon = "icon-ok";
 			data.label = "success";
 			data.alert = "";
-			initCountDown(1);
 			break;
 		case 8:
 			data.statustxt = "Seems offline";
