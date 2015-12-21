@@ -111,7 +111,7 @@ function updateMonitor(monitor){
 			data.label = "warning";
 			data.alert = "alert alert-warning";
 			notify(appName+" "+monitorName+" "+data.statustxt);
-			initCountDown(3);
+			initCountDown(5);
 			break;
 		case 9:
 			data.statustxt = "Offline";
@@ -119,7 +119,7 @@ function updateMonitor(monitor){
 			data.label = "danger";
 			data.alert = "alert alert-danger";
 			notify(appName+" "+monitorName+" "+data.statustxt);
-			initCountDown(3);
+			initCountDown(5);
 			break;
 	}
 
