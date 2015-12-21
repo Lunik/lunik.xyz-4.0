@@ -41,8 +41,8 @@ function updateCountDown(){
 	if(COUNTDOWN <= 0){
 		update();
 		COUNTDOWN = DEFAULTCOUNTDOWN;
+		$('.reload progress').attr('max',COUNTDOWN);
 	}
-	$('.reload progress').attr('max',COUNTDOWN);
 	$('.reload progress').attr('value',COUNTDOWN);
 
 	setTimeout(updateCountDown, 1000);
