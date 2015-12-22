@@ -24,11 +24,9 @@ a{
 	text-decoration: none;
 	color: #DF7401;
 }
-
-a:hover,a:focus{
+a:hover{
 	color: #FF8000;
 }
-
 a:active{
 	color: #FE9A2E;
 }
@@ -280,6 +278,11 @@ i.but{
 /************/
 
 .content#whoami{
+
+}
+
+.content#whoami .content-stuff{
+	top: 15%;
 }
 
 /****************/
@@ -287,4 +290,57 @@ i.but{
 /****************/
 
 .content#contact{
+
+}
+
+.content#contact .content-stuff{
+	top: 15%;
+	width: 50%;
+}
+
+.content#contact .form{
+	text-align: center;
+}
+
+.content#contact input, .content#contact textarea{
+
+	width: 100%;
+	max-width: 100%;
+	padding: 10px;
+	margin: 5px auto 5px auto;
+
+	color: grey;
+	font-size: 15px;
+
+	background-color: #FFF;
+
+	border: 1px solid #D8E1E4;
+	border-radius: 3px;
+}
+
+.content#contact .wrong{
+	background-color: red;
+}
+
+.content#contact input{
+	height: 15px;
+}
+
+.content#contact textarea{
+	height: 200px;
+	max-height: 200px;
+}
+
+.content#contact input[type="submit"]{
+	width: 20%;
+	min-width: 100px;
+	height: 100%;
+
+	cursor: pointer;
+}
+.content#contact input[type="submit"]:hover{
+	background-color: #DDD;
+}
+.content#contact input[type="submit"]:active{
+	background-color: #CCC;
 }
