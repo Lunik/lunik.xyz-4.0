@@ -36,9 +36,7 @@ function contactSubmitMessage(){
 	var data = contactGetInput();
 	if(data != -1){
 		contactCleanInput();
-		$.post("src/php/contact.php",{'from':data.nom, 'email': data.email, 'message':data.message},function(data){
-			console.log(data);
-		});
+		$.post("src/php/contact.php",{'from':data.nom, 'email': data.email, 'message':data.message});
 	}
 }
 
