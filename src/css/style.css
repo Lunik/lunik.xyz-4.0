@@ -283,8 +283,52 @@ i.but{
 
 .content#whoami .content-stuff{
 	top: 15%;
+	vertical-align: middle;
 }
 
+.content#whoami .logo{
+	width: 300px;
+}
+
+.content#whoami .skill{
+	display: inline-block;
+	margin: 50px;
+	width: 40%;
+}
+
+.content#whoami .skill p{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.content#whoami .skill progress[value]{
+	-webkit-appearance: none;
+  	appearance: none;
+
+  	width: 95%;
+  	height: 30px;
+
+}
+
+.content#whoami .skill progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 100px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  background-color: #222;
+}
+
+.content#whoami .skill progress[value]::-webkit-progress-value {
+  border-radius: 100px; 
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+  background-color: #DF7401;
+}
+
+@media only screen and (max-width: 768px) {
+	.content#whoami .skill{
+		margin: 20px;
+		width: 80%;
+	}
+}
 /****************/
 /*	  Contact	*/
 /****************/
