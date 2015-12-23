@@ -21,6 +21,10 @@
 		"web":{	
 			"name":"Web",
 			"key":"m777287626-cc6a00a9de92aeae387bfefc"
+		},
+		"rtorrent":{
+			"name":"rTorrent",
+			"key":"m777312222-af4467d31743490c1b88a155"
 		}
 	},
 	"Chat":{
